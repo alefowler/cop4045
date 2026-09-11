@@ -1,6 +1,6 @@
 import math
 import numpy as np  
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 
 while True:
     user_input= input("Enter a (Enter to exit): ")
@@ -30,8 +30,5 @@ while True:
 
     plt.plot(x, y)
     plt.title(f'Quadratic Function: {a}x^2 + {b}x + {c}')
-    plt.axhline(0, color='black', lw=0.5, ls='--')
-    plt.axvline(0, color='black', lw=0.5, ls='--')
-    plt.grid()
     plt.show()
 
